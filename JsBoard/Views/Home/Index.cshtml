@@ -1,0 +1,21 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Html5Boilerplate.cshtml";
+}
+
+@Styles.Render("~/bundles/styles")
+
+@Scripts.Render("~/bundles/libs")
+@Scripts.Render("~/bundles/app")
+
+<div id="busyindicator" class="ui-widget-overlay">
+    <span></span>
+</div>
+
+<div id="shell-view">
+    @RenderPage("~/Views/Paint.cshtml")
+</div>
+
+<script type="text/javascript" src="@Url.Content("~/signalr/hubs")"></script>
+@Scripts.Render("~/Scripts/main.js")

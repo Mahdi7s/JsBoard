@@ -1,0 +1,12 @@
+﻿#paint-view { }
+
+    #paint-view > header { padding: 5px; height: 30px; }
+
+        #paint-view > header > #draw-mode-container { float: left; }
+        #paint-view > header > button { float: right; }
+
+#painters-view { float: right; width: 20%; }
+
+#busyindicator { width: 100%; height: 100%; margin: 0; padding: 0; z-index: 100; }
+
+    #busyindicator > span { position: fixed; top: 50%; left: 50%; display: inline-block; width: 64px; margin-left: -32px; margin-top: -32px; height: 64px; background: transparent url('ajax-loader.gif') no-repeat 0 center; -moz-background-size: 64px; -o-background-size: 64px; -webkit-background-size: 64px; background-size: 64px; }

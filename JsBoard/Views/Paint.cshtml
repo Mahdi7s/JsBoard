@@ -1,0 +1,18 @@
+﻿<div id="paint-view">
+    <header class="ui-widget-header">
+        <div id="draw-mode-container">
+            <input id="pen" class="draw-mode-pen" name="drawMode" value="pen" type="radio" checked="checked" data-bind="checked: drawingMode" />
+            <label for="pen">Pen</label>
+
+            <input id="rectangle" class="draw-mode-rectangle" name="drawMode" value="rectangle" type="radio" data-bind="checked: drawingMode" />
+            <label for="rectangle">Rectangle</label>
+
+            <input id="eraser" class="draw-mode-circle" name="drawMode" value="circle" type="radio" data-bind="checked: drawingMode" />
+            <label for="eraser">Circle</label>
+        </div>
+
+        <button id="clear" data-bind="click: clearBoard">Clear</button>
+    </header>
+    <section id="paper-container">
+    </section>
+</div>
