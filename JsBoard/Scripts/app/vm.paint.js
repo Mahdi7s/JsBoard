@@ -38,7 +38,7 @@
                     },
                     move = function (dx, dy, x, y) {
                         var px = x - pOffset.left,
-                            py = y - pOffset.top;
+                            py = y - pOffset.top + 9;
 
                         if (pathArray) {
                             if (pathArray.length == 0) {
