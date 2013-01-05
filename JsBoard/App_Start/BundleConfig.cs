@@ -35,7 +35,7 @@ namespace JsBoard.App_Start
                 .Include("~/Content/eggplant/jquery-ui-{version}.custom.css",
                         "~/Content/site.css"));
 
-            //BundleTable.EnableOptimizations = true; uncomment this when publish project
+            //BundleTable.EnableOptimizations = true; uncomment this for publishing
         }
     }
 }
